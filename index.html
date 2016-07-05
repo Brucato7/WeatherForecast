@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Get your Five Day Forecast</title>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+  		<div class="container-fluid">
+    		<div class="navbar-header">
+      			<a class="navbar-brand" href="#">UR<strong>WTHR</strong>4<strong>5</strong></a>
+    		</div>   
+  		</div>
+	</nav>
+
+	<div class="container-fluid text-center">
+		<div class="jumbotron">
+			<h1>UR<strong>WTHR</strong>4<strong>5</strong></h1>
+			<p>(Your Weather For Five)</p>
+			<p>Gives you quick access to your upcoming five day forecast. We just need your location.</p>
+			<br>
+			<h2>Send us your location via...</h2>
+		</div>
+	</div>
+	
+	<div class="container text-center">
+		<div class="row">
+
+			<div class="col-md-4">
+				<h3>Facebook!</h3>
+				<div>
+					<img src="facebook.png" alt="Facebook Logo" height="150" width="150">
+				</div>
+				<button type="button" class="btn btn-primary" id="facebookBtn">Get My Forecast!</button>
+			</div>
+
+			<div class="col-md-4">
+				<h3>Typing it in!</h3>
+				<div>
+					<img src="typing.png" alt="Guy sitting at computer" height="150" width="150">
+				</div>
+				<button type="button" class="btn btn-primary" id="locationFormBtn">Get My Forecast!</button>
+			</div>
+
+			<div class="col-md-4">
+				<h3>GeoLocation!</h3>
+				<div>
+					<img src="globePin.png" alt="Push Pin in a Globe" height="150" width="150">
+				</div>
+				<button type="button" class="btn btn-primary" id="geoLocationBtn">Get My Forecast!</button>
+			</div>
+
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
