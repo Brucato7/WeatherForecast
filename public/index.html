@@ -20,28 +20,29 @@
 			<h1>UR<strong>WTHR</strong>4<strong>5</strong></h1>
 			<p>(Your Weather For Five)</p>
 			<p>Gives you quick access to your upcoming five day forecast. We just need your location.</p>
-			<br>
-			<h2>Send us your location via...</h2>
 		</div>
 	</div>
 	
 	<div class="container text-center">
+		<h2>Send us your location via...</h2>
 		<div class="row">
 
-			<div class="col-md-4">
+			<div class="col-md-4" id="facebookDiv">
 				<h3>Facebook!</h3>
 				<div>
 					<img src="facebook.png" alt="Facebook Logo" height="150" width="150">
 				</div>
-				<button type="button" class="btn btn-primary" id="facebookBtn">Get My Forecast!</button>
+				<button type="button" class="btn btn-primary" id="facebookBtn" onclick="checkLoginState()">Get My Forecast!</button>
+				
 			</div>
 
-			<div class="col-md-4">
+			<div class="col-md-4" id="typeItIn">
 				<h3>Typing it in!</h3>
 				<div>
 					<img src="typing.png" alt="Guy sitting at computer" height="150" width="150">
 				</div>
-				<button type="button" class="btn btn-primary" id="locationFormBtn">Get My Forecast!</button>
+				
+				<!-- <button type="button" class="btn btn-primary" id="locationFormBtn">Get My Forecast!</button> -->
 			</div>
 
 			<div class="col-md-4">
@@ -53,10 +54,12 @@
 			</div>
 
 		</div>
+
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places&key=AIzaSyDhaReQhYmwgJkA32hSAFOcXZ7k5dL1qSY"></script>
   	<script type="text/javascript" src="weather.js"></script>
   	<script type="text/javascript" src="geoLocation.js"></script>
   	<script type="text/javascript" src="facebook.js"s></script>

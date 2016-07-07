@@ -1,0 +1,25 @@
+{
+  "name": "weatherforecast",
+  "version": "1.0.0",
+  "description": "Weather Project for dCC",
+  "main": "/public/app.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "pg": "^6.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brucato7/WeatherForecast.git"
+  },
+  "author": "Jon Weisse",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Brucato7/WeatherForecast/issues"
+  },
+  "homepage": "https://github.com/Brucato7/WeatherForecast#readme"
+}
