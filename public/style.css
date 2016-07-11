@@ -1,0 +1,24 @@
+.weatherReport{
+	border-radius: 10px;
+	border: 1px #000 solid;
+	background-color: #444;
+	padding: 5px;
+	color: #ddd;
+	margin-bottom: 15px;
+}
+.tempMin{
+	font-size: 24px;
+}
+.forecastSummary{
+	font-size: 18px;
+}
+.precip{
+	font-size: 12px;
+}
+.dayOfWeek{
+	text-decoration: underline;
+}
+#subHeader{
+	margin-top: -20px;
+}
+

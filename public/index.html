@@ -5,6 +5,7 @@
 	<title>Get your Five Day Forecast</title>
 	<link rel="stylesheet" type="text/css" href="normalize.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<nav class="navbar navbar-inverse navbar-fixed-top">
@@ -15,15 +16,15 @@
   		</div>
 	</nav>
 
-	<div class="container-fluid text-center">
+	<div class="container-fluid text-center" id="siteContentContainer">
 		<div class="jumbotron">
 			<h1>UR<strong>WTHR</strong>4<strong>5</strong></h1>
-			<p>(Your Weather For Five)</p>
+			<p id="subHeader">(Your Weather For Five)</p>
 			<p>Gives you quick access to your upcoming five day forecast. We just need your location.</p>
 		</div>
 	</div>
 	
-	<div class="container text-center">
+	<div class="container text-center" id="locationQueryContainer">
 		<h2>Send us your location via...</h2>
 		<div class="row">
 
@@ -32,7 +33,7 @@
 				<div>
 					<img src="facebook.png" alt="Facebook Logo" height="150" width="150">
 				</div>
-				<button type="button" class="btn btn-primary" id="facebookBtn" onclick="checkLoginState()">Get My Forecast!</button>
+				
 				
 			</div>
 
@@ -45,12 +46,12 @@
 				<!-- <button type="button" class="btn btn-primary" id="locationFormBtn">Get My Forecast!</button> -->
 			</div>
 
-			<div class="col-md-4">
+			<div class="col-md-4" id="geoLocate">
 				<h3>GeoLocation!</h3>
 				<div>
 					<img src="globePin.png" alt="Push Pin in a Globe" height="150" width="150">
 				</div>
-				<button type="button" class="btn btn-primary" id="geoLocationBtn">Get My Forecast!</button>
+				
 			</div>
 
 		</div>
@@ -62,7 +63,7 @@
   	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places&key=AIzaSyDhaReQhYmwgJkA32hSAFOcXZ7k5dL1qSY"></script>
   	<script type="text/javascript" src="weather.js"></script>
   	<script type="text/javascript" src="geoLocation.js"></script>
-  	<script type="text/javascript" src="facebook.js"s></script>
+  	<script type="text/javascript" src="facebook.js"></script>
   	<script type="text/javascript" src="app.js"></script>
 </body>
 </html>
