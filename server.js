@@ -2,10 +2,16 @@ var express = require("express");
 var app = express();
 var database = require("./db-manager.js")
 
+app.set('view engine', 'pug');
+
 app.use(express.static("public"));
 app.listen(3000,function(){
 	console.log("Listening on port ", 3000);
 });
+
+app.get("/pug", function(request, response){
+	response.render('index');
+})
 
 var https = require("https");
 
