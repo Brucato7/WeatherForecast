@@ -3,14 +3,6 @@
 function WeatherForecast(){
 	this.getWeather = function(latitude,longitude, callback){
   		$.getJSON('/weather?latitude='+latitude+'&longitude='+longitude, function(data){
-  			// console.log("Temp Max should be 77.66: ");
-  			// console.log(data.daily.data[0].temperatureMax);
-  			// console.log("Temp Min should be 58.19: ");
-  			// console.log(data.daily.data[0].temperatureMin);
-  			// console.log("Precip% should be .5: ");
-  			// console.log(data.daily.data[0].precipProbability);
-  			// console.log("Sumary should be Light rain...: ");
-  			// console.log(data.daily.data[0].summary);
   			callback(data);
   		});
 	}
@@ -30,10 +22,10 @@ function WeatherForecast(){
 		var summary;
 		var forecastHTML = "<div class='row' id='fiveDayForecast'>";
 		for (var i = 0; i < 5; i++){
-			maxTemp = Math.round(data.daily.data[i].temperatureMax);
-			minTemp = Math.round(data.daily.data[i].temperatureMin);
-			precipChance = (data.daily.data[i].precipProbability) * 100;
-			summary = data.daily.data[i].summary
+			maxTemp = data.rows[i].max_temp;
+			minTemp = data.rows[i].min_temp;
+			precipChance = Math.round(data.rows[i].precip_chance * 100);
+			summary = data.rows[i].summary
 			forecastHTML += "<div class='col-sm-4 col-md-2";
 			if(i == 0){
 				forecastHTML += " col-md-offset-1'>";
