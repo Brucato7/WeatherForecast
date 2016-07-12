@@ -9,7 +9,7 @@ app.listen(3000,function(){
 	console.log("Listening on port ", 3000);
 });
 
-app.get("/pug", function(request, response){
+app.get("/", function(request, response){
 	response.render('index');
 })
 

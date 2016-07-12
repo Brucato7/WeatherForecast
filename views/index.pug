@@ -1,6 +1,54 @@
 doctype
 html
 	head
-		title "Hello World"
+		meta(charset='utf-8')
+		title Get your Five Day Forecast | URWTHR45
+		link(rel='stylesheet', type='text/css', href='normalize.css')
+		link(rel='stylesheet', href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css")
+		link(rel='stylesheet', type='text/css', href='style.css')
 	body
-		h1 This is Pug?
+		nav.navbar.navbar-inverse.navbar-fixed-top
+			.container-fluid
+				.navbar-header
+					a.navbar-brand(href='#')
+						|UR
+						strong WTHR
+						|4
+						strong 5
+
+		div.container-fluid.text-center(id='siteContentContainer')
+			.jumbotron
+				h1 
+					|UR
+					strong WTHR
+					|4
+					strong 5
+				p(id='subHeader') (Your Weather For Five)
+				p Gives you quick access to your upcoming five day forecast. We just need your location.
+
+
+		div.container.text-center(id="locationQueryContainer")
+			h2 Send us your location via...
+			.row
+				div.col-md-4(id="facebookDiv")
+					h3 Facebook!
+					div
+						img(src="facebook.png",alt="Facebook Logo",height='150',width='150')
+
+				div.col-md-4(id="typeItIn")
+					h3 Typing it in!
+					div
+						img(src="typing.png",alt="Guy sitting at computer",height='150',width='150')
+
+				div.col-md-4(id="geoLocate")
+					h3 GeoLocation!
+					div
+						img(src="globePin.png",alt="Push-Pin in a globe",height='150',width='150')
+
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js")
+		script(src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")
+		script(src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places&key=AIzaSyDhaReQhYmwgJkA32hSAFOcXZ7k5dL1qSY")
+		script(type='text/javascript' src="weather.js")
+		script(type='text/javascript' src="geoLocation.js")
+		script(type='text/javascript' src="facebook.js")
+		script(type='text/javascript' src="app.js")
